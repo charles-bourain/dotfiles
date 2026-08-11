@@ -61,7 +61,7 @@ If STE makes a technical statement wrong or unclear, keep the statement correct.
    Write `scenarioScorePairs`, not `pairs`. Write `configById`, not `map`.
 2. Name a collection so that the plural says what the items are. Write
    `unstampedScores`, not `items`.
-3. A short generic name is required in two places:
+3. A short generic name is allowed in two places:
    - a loop index or an entry variable with a scope of a few lines
    - a callback parameter whose meaning is clear from the collection name,
      for example `scenarioScorePairs.map(pair => pair.scoreId)`
