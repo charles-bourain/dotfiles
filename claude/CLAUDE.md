@@ -54,3 +54,16 @@ Keep quoted text exactly as you found it. Do not change it to STE.
 ### When the rules conflict
 
 If STE makes a technical statement wrong or unclear, keep the statement correct. Then use the most simple words that stay correct. Accuracy is more important than the word count.
+
+## Variable names
+
+1. Name a variable for the data that it holds, not for its shape or its type.
+   Write `scenarioScorePairs`, not `pairs`. Write `configById`, not `map`.
+2. Name a collection so that the plural says what the items are. Write
+   `unstampedScores`, not `items`.
+3. A short generic name is required in two places:
+   - a loop index or an entry variable with a scope of a few lines
+   - a callback parameter whose meaning is clear from the collection name,
+     for example `scenarioScorePairs.map(pair => pair.scoreId)`
+4. When a review comment asks what a variable holds, rename the variable.
+   Do not add a comment instead.
